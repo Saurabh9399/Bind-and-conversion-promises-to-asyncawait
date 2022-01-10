@@ -11,3 +11,14 @@ async function getValue() {
     const v = await myPromise();
     console.log(v);
 }
+
+// array reduce
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
+// accumulator will collect the sum and 
+// currentValue will have value of each element at a time.
+
+console.log(sum);
